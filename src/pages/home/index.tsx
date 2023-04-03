@@ -19,7 +19,6 @@ import {
   Header,
   HeaderContent,
   HeaderButtonsArea,
-  UserImage,
   StackCards,
   ProjectsArea,
   ProjectsAreaSocialMediaMessage,
@@ -37,29 +36,21 @@ export const Home = (): JSX.Element => {
         <Container>
           <HeaderContent>
             <Flex>
-              <UserImage
-                src={`https://github.com/${userData.githubUser}.png`}
-                alt={userData.nameUser}
-                title={userData.nameUser}
-                width={"48px"}
-                height={"48px"}
-              />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              <Text color="grey4">Hello World,</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
+            Passionate about {" "}
               <Text as="span" type="heading1" color="brand1">
-                love
+              technology
               </Text>{" "}
-              creating and{" "}
+              and creating and{" "}
               <Text as="span" type="heading1" color="brand1">
-                developing
+              develop
               </Text>{" "}
-              projects
+              projects.
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+            Find out here, a little about my knowledge and experience acquired over the years, created especially for you, all my projects and technologies.
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">

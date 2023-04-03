@@ -25,6 +25,12 @@ export const Button = styled("button", {
         background: "transparent",
         borderColor: "transparent",
         fontWeight: "500",
+        '&:hover': {
+          color: 'blue',
+          scale:1.1
+      },
+
+        
       },
       primary: {
         background: "$brand1",

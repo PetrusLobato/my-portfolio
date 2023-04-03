@@ -28,7 +28,7 @@ export const Box = styled("div", {
 export const colors = {
   color: {
     brand1: {
-      color: "$brand1",
+      color: "blue",
     },
     brand2: {
       color: "$brand2",
