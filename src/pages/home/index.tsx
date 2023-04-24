@@ -26,9 +26,14 @@ import {
   ProjectsAreaContent,
 } from "./style";
 
+
+
+
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
   const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
+console.log(userData, import.meta.env.VITE_GITHUB_USER)
+
 
   return (
     <main id="home">
