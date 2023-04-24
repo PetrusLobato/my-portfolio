@@ -1,4 +1,4 @@
-###💻 Portfólio
+💻 Portfólio
 
 🎲 Utilizando projeto
 ---------------------
