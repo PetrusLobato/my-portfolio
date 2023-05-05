@@ -19,6 +19,9 @@ export const ProjectStackTech = styled("span", {
 
 export const ProjectLinks = styled(Flex, {
   marginTop: "2.25rem",
+
+  
+  
 });
 
 export const ProjectLink = styled("a", {
@@ -37,6 +40,7 @@ export const ProjectLink = styled("a", {
   [`& svg`]: {
     marginRight: "$1",
   },
+
 });
 
 export const ProjectTitle = styled(Text, {});

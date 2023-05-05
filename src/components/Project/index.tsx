@@ -9,8 +9,10 @@ import {
 
 import { Text } from "@/styles/Text";
 import { useEffect, useState } from "react";
-import { FaGithub, FaShare } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { userData } from "@/utils/userData";
+import {FcLink} from "react-icons/fc"
+
 
 interface ReposType {
   id: number;
@@ -23,6 +25,7 @@ interface ReposType {
 
 export const Project = (): JSX.Element => {
   const [repositories, setRepositories] = useState<ReposType[]>([]);
+  
 
   useEffect(() => {
     const fetchData = async () => {
@@ -39,6 +42,7 @@ export const Project = (): JSX.Element => {
 
     fetchData();
   }, []);
+
 
   return (
     <>
@@ -81,13 +85,17 @@ export const Project = (): JSX.Element => {
                 <FaGithub /> Github Code
               </ProjectLink>
               {repository.homepage && (
-                <ProjectLink
+              <ProjectLink
                   target="_blank"
                   href={`https://${repository.homepage}`}
-                >
-                  <FaShare /> See demo
-                </ProjectLink>
+                > 
+              </ProjectLink>
               )}
+              <ProjectLink href={`${repository.homepage}`} target="_blank">
+                
+
+                <FcLink/>
+              </ProjectLink>
             </ProjectLinks>
           </ProjectWrapper>
         ))}
